@@ -18,6 +18,20 @@ body {
 	font-family: Lato cursive, Helvetica ;
 }
 
+
+header #contacts h2 {
+	font-size: 1.7em;
+	line-height: 50px;
+font-family: 'Lato', sans-serif;
+}
+
+header #contacts h3 {
+	font-size: 3em;
+	line-height: 60px;
+font-family: 'Oswald', sans-serif;
+}
+
+
 header {
 	width: 100%;
 	padding: 10px 0.5% 0px 0.5%
@@ -274,15 +288,18 @@ color: #343434;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Slab', serif;
+	font-family: 'Aleo', serif;
+
   font-weight: lighter;
 }
+
+#contacts h2 {font-size: 2em; color: #4f4f4f}
 
 #contacts h5 {font-size: 3em; color: #4f4f4f}
 
 #form_input {
-  margin-top: 15px;
-  font-size: 1.1em;
+  margin-top: 10px;
+  font-size: 1.3em;
 }
 
 @media (min-width: 1051px) {
