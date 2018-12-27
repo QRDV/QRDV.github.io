@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Верстка сайтов</title>
+  <link rel="stylesheet" href="css/main css/main.css">
+</head>
+      <body>
+
+        <header>
+          <div id="osite" >
+
+          <a href="#" title="о нас" onclick="slowScroll ('#main')">Услуги </a>
+          <a href="#" onclick="slowScroll('#overwiev')" title="Обзор">Это мы</a>
+          <a href="#" onclick="slowScroll('#contacts')" title="Contacts">Контакты</a>
+          <a href="#" onclick="slowScroll('#faq')" title="Чем мы занимаемся">FAQ</a>
+          </div>
+
+          <div id="logo" onclick="slowCroll('#top')" >
+        <span>QRDV</span>
+        <a> custom web-developting </a>
+          </div>
+
+
+</header>
+
+
+<div id="top">
+    <h1>Сайты на заказ от QRDV</h1>
+    <h3>вот, что вам нужно ;)</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Перспективные специалисты</h2>
+      <span>Наша команда состоит из молодых и амбициозных людей</span>
+    </div>
+    <div class="text">
+      <h2>Наши работы:</h2>
+      <span>...</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="" alt="">
+      <span>Умелая команда </span>
+    </div>
+    <div class="img">
+      <img src="" alt="">
+      <span>Консультация с заказчиком</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходить оплата?</span>
+      <p>Оплата производится по договоренности, после выполнения части указанной работы. Оплата производится по реквезитам банковской карты, либо же на счёт одного из электронных кошельков</p>
+        </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>Мы предотавляем такие услуги как: Выполнение сайтов по шаблону или же с нуля на разных платформах; Шапки или Аватарки для ваших групп в социальных сетях; Профессиональное редактирование изображений в графических редакторах, Art-рисунки.</p>
+          </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>Вы можете быть уверены в сделке, так-как оплачиваете свой заказ вы не сразу, а лишь после выполнения части сделки. </p>
+          </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
+</header>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      function slowCroll(id) {
+      $('body').animate({
+          scrollTop: $(id),offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+      else {
+        $("header").attr("class", "fixed");
+      });
+    }
